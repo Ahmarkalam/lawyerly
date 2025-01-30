@@ -21,6 +21,29 @@
             </ul>
         </div>
     </nav>
+    <!-- Auth Buttons -->
+<div class="auth-container">
+  <button id="signInButton" class="auth-btn">Sign In</button>
+  <button id="signUpButton" class="auth-btn">Sign Up</button>
+  <button id="signOutButton" class="auth-btn" style="display: none;">Sign Out</button>
+</div>
+
+<!-- Auth Modal -->
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="authTitle">Sign In</h3>
+    <input type="email" id="authEmail" placeholder="Email">
+    <input type="password" id="authPassword" placeholder="Password">
+    <button id="authSubmit" class="cta-button">Submit</button>
+    <button id="googleSignIn" class="google-btn">
+      <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google">
+      Continue with Google
+    </button>
+    <p id="authError" class="error-message"></p>
+    <p id="authToggle">Don't have an account? <a href="#" id="toggleAuth">Sign Up</a></p>
+  </div>
+</div>
 
     <!-- Hero Section -->
     <section class="hero">
